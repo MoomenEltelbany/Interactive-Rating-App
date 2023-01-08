@@ -78,17 +78,45 @@ body {
     transition: 0.5s;
 }
 
+.container ul li.done {
+    background-color: var(--medium-grey-color);
+}
+
+.container ul li.done a {
+    color: white;
+}
+
 .container ul li:hover {
     background-color: var(--orange-color);
-    /* color: white; */
 }
 
 .container ul li a {
-    /* color: var(--medium-grey-color); */
+    color: var(--medium-grey-color);
     font-size: 15px;
     transition: 0.5s;
 }
 
-.container ul li a:hover {
-    color: yellow;
+.container ul li:hover a {
+    color: white;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--orange-color);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: var(--orange-color);
+    background-color: white;
 }
