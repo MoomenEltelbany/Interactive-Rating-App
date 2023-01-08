@@ -13,7 +13,7 @@ links.forEach((ele) => {
 });
 
 // Getting the span where it catches the rating number
-let ratingSpan = document.querySelector("rating-num");
+let ratingSpan = document.querySelector(".rating-num");
 
 // Getting the submit button
 let submitBtn = document.querySelector("button");
@@ -26,3 +26,5 @@ submitBtn.onclick = () => {
     });
     console.log(chosenRating);
 };
+
+export default chosenRating;
