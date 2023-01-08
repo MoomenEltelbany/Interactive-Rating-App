@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey-color: hsl(217, 12%, 63%);
+    --medium-grey-color: hsl(216, 12%, 54%);
+    --dark-blue-color: hsl(213, 20%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange-color: rgb(251, 120, 19);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+}
+
+/* Start the body */
+
+body {
+    background-color: var(--very-dark-blue);
+}
+
+.container {
+    background-color: var(--dark-blue-color);
+    width: 600px;
+    margin: 150px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container .image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(49, 59, 72);
+}
+
+.container h2 {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.container p {
+    color: var(--medium-grey-color);
+    margin-bottom: 30px;
+}
+
+.container ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container ul li {
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(49, 59, 72);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container ul li:hover {
+    background-color: var(--orange-color);
+    /* color: white; */
+}
+
+.container ul li a {
+    /* color: var(--medium-grey-color); */
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.container ul li a:hover {
+    color: yellow;
+}
